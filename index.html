@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Details</title>
+</head>
+<body>
+
+    <h2>Form For Company Details</h2>
+
+    <form action="/backend.php" method="post">
+        <!-- Text Input -->
+        <div>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <br>
+        <!-- Textarea -->
+        <div>
+
+            <label for="message">Tell Me About The Company:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <br>
+        <!-- Radio Buttons -->
+        <fieldset>
+            <legend>Work Mode:</legend>
+            <label>
+                <input type="radio" name="Work Mode" value="Home" checked>Home
+            </label>
+            <label>
+                <input type="radio" name="Work Mode" value="Office"> Office
+            </label>
+            <label>
+                <input type="radio" name="Work Mode" value="Hybrid"> Hybrid
+            </label>
+        </fieldset>
+        <br>
+        <!-- Checkboxes -->
+        <fieldset>
+            <legend>Benifits:</legend>
+            <label>
+                <input type="checkbox" name="Benifits" value="Bonus">Bonus
+            </label>
+            <label>
+                <input type="checkbox" name="Benifits" value="Providend Fund">Providend Fund
+            </label>
+            <label>
+                <input type="checkbox" name="Benifits" value="Paid Travel">Paid Travel
+            </label>
+            <label>
+                <input type="checkbox" name="Benifits" value="WeekOffs">WeekOffs
+            </label>
+            <label>
+                <input type="checkbox" name="Benifits" value="Paid Travel">Paid Travel
+            </label>
+            <label>
+                <input type="checkbox" name="Benifits" value="Insurance">Insurance
+            </label>
+            <label>
+                <input type="checkbox" name="Benifits" value="Stocks">Stocks
+            </label>
+        </fieldset>
+        <br>
+        <!-- Dropdown/Select Menu -->
+        <label for="Range">Salary Range</label >
+        <select id="Range" name="Range" required>
+            <option value="twlpa">12 LSPA</option>
+            <option value="tflpa">24 LSPA</option>
+            <option value="tslpa">36 LSPA</option>
+            <!-- Add more options as needed -->
+        </select>
+        <br>
+        <!-- Submit Button -->
+        <br>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="email" id="email" name="Email" required>
+        </div>
+        <br>
+        <div>
+            <label for="date">Interview date:</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+        <br>
+        <div>
+            <label for="date">Interview date:</label>
+            <input type="time" id="date" name="date"required>
+        </div>
+        <br>
+        <input type="file">
+        <br>
+
+        <input type="submit" value="Submit">
+        <br>
+    </form>
+
+</body>
+</html>
